@@ -1,0 +1,147 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    --main-grey: rgb(248, 249, 254);
+    --bright-blue: hsl(245, 75%, 52%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    font-family: "Red Hat Display";
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#main-container {
+    width: 21.875rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    height: 34rem;
+}
+
+#hero-container {
+    height: 37%;
+}
+
+.card-hero {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body__heder{
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.card-body {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card-body__text {
+    text-align: center;
+}
+
+.attribution {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.subscription-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    background-color: rgb(248, 249, 254);
+    border-radius: 10px;
+}
+
+.details-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.subscription-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscription-details .subscription-title{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.subscription-details .subscription-price{
+    font-weight: 700;
+    font-size: .8rem;
+    color: grey;
+}
+
+.subscription-container a {
+    display: flex;
+    align-self: center;
+    color: var(--bright-blue);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.order-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.order-buttons a {
+    border-radius: 8px;
+    padding: 0.7rem 5rem;
+    font-size: .75rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.order-buttons a:nth-child(1) {
+    background-color: var(--bright-blue);
+    color: white;
+    border: none;
+    box-shadow: 0px 13px 6px var(--pale-blue);
+}
+
+.order-buttons a:nth-child(2) {
+    border: none;
+    background: none;
+    color: grey;
+}
+
+.attribution{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 376px){
+    #main-container {
+        width: 20rem;
+    }
+
+    .order-buttons a:nth-child(1) {
+        padding: 0.7rem 4rem;
+    }
+    
+}
